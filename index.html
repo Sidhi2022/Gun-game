@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kill-Enime</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <!-- <img src="./gun.png" alt="Fire" id="fireBtn" width="10%" /> -->
+    <div class="bulletcontainer" id="bulletcontainer">
+      <img src="./gun.png" alt="Fire" id="fireBtn" width="10%" />
+      <div>&nbsp;</div>
+    </div>
+    <br />
+    <input type="button" value="gunLock" id="gunLock" />
+    <input
+      type="button"
+      value="reload"
+      id="reloadGun"
+      style="display: none"
+      onclick="updateCurrentGunFn()"
+    />
+    <p>No Of Clicks: <b id="noOfClicks">0</b></p>
+    <select
+      id="flagForGunFireFnThrottleValueInput"
+      onchange="updateCurrentGunFn()"
+    >
+      <option value="mg">machine gun</option>
+      <option value="lm3">lm3</option>
+    </select>
+    <!-- <img src="./gun.png" alt="Fire" id="fireBtn" width="10%" /> -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>

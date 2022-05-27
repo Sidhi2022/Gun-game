@@ -1,0 +1,21 @@
+.bulletcontainer {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.bulletDiv {
+  background: #444;
+  width: 1rem;
+  height: 0.4rem;
+  margin: 0.2rem;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  display: flex;
+}
+.fireBtn {
+  padding: top 10px;
+  position: align;
+  padding-left: 0%;
+}
